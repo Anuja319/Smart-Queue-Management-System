@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Queue - Admin</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         HEADER
+    ================================================== -->
+
+    <header>
+
+        <h1>Smart Queue System</h1>
+
+        <nav>
+
+            <a href="index.html">
+                Customer
+            </a>
+
+            <a href="admin.html">
+                Admin
+            </a>
+
+            <a href="display.html">
+                Display
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =================================================
+         ADMIN MAIN
+    ================================================== -->
+
+    <main>
+
+
+        <h2>Admin Dashboard</h2>
+        <br>
+        <br>
+
+        <!-- =================================================
+             STATISTICS
+        ================================================== -->
+
+        <section class="stats">
+
+
+            <div class="stat-card">
+
+                <h3>Waiting Customers</h3>
+
+                <p id="waitingCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Completed Customers</h3>
+
+                <p id="completedCount">
+                    0
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             CURRENT CUSTOMER ACTIONS
+        ================================================== -->
+
+        <section class="admin-actions">
+
+
+            <button id="serveButton">
+
+                Serve Next Customer
+
+            </button>
+
+
+            <button id="completeButton">
+
+                Complete Current Customer
+
+            </button>
+
+
+        </section>
+        <br>
+        <br>
+
+        <!-- =================================================
+             QUEUE TABLE
+        ================================================== -->
+
+        <section>
+
+            <h2>Customer Queue</h2>
+            
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Token</th>
+
+                        <th>Customer Name</th>
+
+                        <th>Service</th>
+
+                        <th>Priority</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="queueTable">
+
+                </tbody>
+
+
+            </table>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script src="js/admin.js"></script>
+
+
+</body>
+
+</html>
+

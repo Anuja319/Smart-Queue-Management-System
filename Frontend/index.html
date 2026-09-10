@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Smart Queue Management</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Smart Queue</h1>
+
+      <nav>
+        <a href="index.html"> Customer </a>
+
+        <a href="admin.html"> Admin </a>
+
+        <a href="display.html"> Display </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Smart Queue Management System</h2>
+
+        <p>Generate your token and avoid waiting in long queues.</p>
+      </section>
+
+      <section class="card">
+        <h2>Generate Token</h2>
+
+        <form id="tokenForm">
+          <label> Customer Name </label>
+
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label> Select Service </label>
+
+          <select id="service" required>
+            <option value="">Select Service</option>
+
+            <option value="Account Opening">Account Opening</option>
+
+            <option value="Loan">Loan</option>
+
+            <option value="Cash Deposit">Cash Deposit</option>
+
+            <option value="Cash Withdrawal">Cash Withdrawal</option>
+          </select>
+
+          <label> Customer Type </label>
+
+          <select id="priority">
+            <option value="0">Normal</option>
+
+            <option value="1">Priority</option>
+          </select>
+
+          <button type="submit">Generate Token</button>
+        </form>
+      </section>
+
+      <section id="tokenResult" class="token-card hidden">
+        <p>Your Token Number</p>
+
+        <h2 id="tokenNumber">--</h2>
+
+        <p>Please wait for your turn.</p>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
